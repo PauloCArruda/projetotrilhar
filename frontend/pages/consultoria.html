@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria Individual - trilhar</title><style>
+        * {
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        list-style: none;
+        text-decoration: none;
+        }
+    
+    header {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2%;
+    }
+    
+    nav {
+        width: 60%;
+    }
+    
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    li {
+        list-style: none;
+        color:#08295e;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 1s;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: inline;
+    }
+    li:hover {
+        color: #ffd41f;
+        font-weight:bolder;
+        font-style:inherit;
+    }
+    
+    #logo {
+        width: 100px;
+        height: auto;
+        transition: 2s;
+        cursor: pointer;
+        
+    }
+    #logo:hover{
+        transform: scale(1.10);
+        color: red;
+    }
+    .content {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .description {
+        color:#08295e;
+        font-size: 19px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 70%;
+    }
+    .button {
+        width: 120  px;
+        height: 40px;
+        background-color: #ffd41f;
+        color: #08295e;
+        padding: 12px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .8s;
+        font-size: 16px;
+        display: flex;
+        justify-content:center;
+        align-content:space-between;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        margin-top: 0px;
+    }
+    .button:hover {
+        background-color: red;
+        color: #08295e;
+        }
+        footer {
+        height: 300px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        }
+        span {
+        color: #08295e;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;   
+        }
+    
+        .footer-navigation {
+        display:inline;
+        }
+        .footer-list {
+        display: flex;
+        flex-direction: inherit;
+        align-items: center;
+        }
+    
+        @media(max-width: 768px) {
+        .footer-navigation {
+            display:block
+        }
+        nav {
+            display:contents;
+        }
+        }
+        #logo_dois {
+            width: 100px;
+            height: auto;
+            transition: 2s;
+            cursor: pointer;
+        }
+        #logo_dois:hover {
+            transform: scale(1.10);
+            color: red;
+            
+        }
+        #titulo_um {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bolder;
+
+        }
+        #receitas {
+            color: green;
+            font-weight: 10px;
+            font-weight: bolder;
+        }
+        #despesas {
+            color: red;
+            font-weight: 10px;
+            font-weight: bolder;
+        }
+        </style>
+    </head>
+    <header>
+        <img id="logo" src="https://github.com/PauloCArruda/PauloCArruda.github.io/blob/main/logo%20trilhar%20Amarelo.png?raw=true"/>
+        <nav>
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="aulas.html">Aulas</a></li>
+                <li><a href="consultoria.html">Consultoria Individual</a></li>
+                <li><a href="duvidas.html">Dúvudas Frequentes</a></li>
+            </ul>
+        </nav>
+        <button class="button">Entrar</button>
+    </header>
+    <body>
+        <div id="titulo_um"> 
+          <span>Vamos ver como você está?</span>  
+        </div>
+        <div id="corpoDoTexto1">
+            <span id="receitas">Receitas:</span><br>
+            <span>Salário/Renda Mensal:</span><br>
+            <span>Aluguel/Dividendo:</span><br>
+            <span id="despesas">Despesas:</span><br>
+            <span>Moradia(agua, energia, condominio)</span><br>
+            <span>Lazer (Cinema, bar, clube, jogos)</span><br>
+            <span>Transporte (Financiamento carro/moto, combustível)</span><br>
+            <span>Educação (Cursos, faculdade, livros)</span><br>
+            <span>Previdência privada/Investimento</span><br>
+
+        </div>
+        
+        <div id="banner"></div>
+    </body>
+    <footer>
+        <img id="logo_dois"src="https://github.com/PauloCArruda/PauloCArruda.github.io/blob/main/lozango%20trilhar.png?raw=true">
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <a href="index.html">
+                    <li>Principal</li>
+                </a>
+                <a href="aulas.html">
+                    <li>Aulas</li>
+                </a>
+                <a href="consultoria.html">
+                    <li>Consultoria Individual</li>
+                </a>
+                <a href="duvidas.html">
+                    <li>Dúvidas Frequentes</li>
+                </a>
+            </ul>
+        </nav>
+        <span>Todos os Direitos Reservados © </span>
+        <span>Desenvolvido por Leandro, Lucas e Paulo</span>
+    </footer>
+    </html>
