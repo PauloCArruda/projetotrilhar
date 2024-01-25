@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="image" type="image/x-icon" href="https://raw.githubusercontent.com/PauloCArruda/PauloCArruda.github.io/main/lozango-trilhar.ico" >
+    <link href="./login.css" rel="stylesheet">
+    <title>trilhar - Educação Financeira</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://github.com/PauloCArruda/PauloCArruda.github.io/blob/main/logo%20trilhar%20Amarelo.png?raw=true"/>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Principal</li>
+                </a>
+                <a href="aulas.html">
+                    <li>Aulas</li>
+                </a>
+                    <a href="duvidas.html">
+                    <li>Dúvidas Frequentes</li>
+                </a>
+            </ul>
+        </nav>
+        <button class="button" id="entrar">Entrar</button>
+    </header>
+    <script>
+        document.getElementById('entrar').addEventListener('click', function() {
+            window.location.href = 'login.html'; 
+        });
+    </script>
+</header>
+<body>
+
+  <div class="login-container">
+    <form id="loginForm">
+      <h1>Login</h1>
+      <label for="username">Usuário:</label>
+      <input type="text" id="username" name="username" required placeholder="Nome do usuário"><br><br>
+      
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required placeholder="Senha"><br><br>
+      
+      <input type="submit" value="Entrar">
+    </form>
+  </div>
+  </form>
+ 
+
+
+</div>
+
+<script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+          event.preventDefault(); // Evita que o formulário seja submetido normalmente
+    
+          // Verificação das credenciais (simulação)
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+    
+          // Simulação de validação de login (substitua por lógica real)
+          if (username === "trilhar" && password === "123") {
+            // Credenciais válidas, redirecionar para página de cadastro
+            window.location.href = "cadastro.html";
+          } else {
+            // Credenciais inválidas (simulação)
+            alert("Credenciais inválidas. Tente novamente."); // Apenas para simulação, considere uma abordagem mais segura em um ambiente real
+          }
+        });
+      </script>
+      
+</body>
+<footer>
+  <div class="footer-container">
+      <div class="logo-container">
+          <img id="logofooter" src="https://github.com/PauloCArruda/PauloCArruda.github.io/blob/main/logo%20trilhar%20Amarelo.png?raw=true"/>
+      </div>
+      <div class="footer-content">
+          <span>Todos os Direitos Reservados © 2023</span>
+          <span>Desenvolvido por Leandro, Lucas e Paulo</span>
+      </div>
+      
+  </div>
+</footer>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #08295e;
+        }
+        .container {
+            width: 300px;
+            padding: 16px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 100px;
+            border-radius: 4px;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        .btn {
+            background-color: #ffd41f;
+            color: #08295e;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        .btn:hover {
+            opacity: 1;
+        }
+        #cadastro {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="login">
+        <label for="Usuario"><b>Usuario</b></label>
+        <input type="text" placeholder="Usuario" name="uname" required>
+        <label for="psw"><b>Senha</b></label>
+        <input type="password" placeholder="Senha" name="psw" required>
+        <button type="submit" class="btn">Login</button>
+        <span class="psw">Não tem uma conta? <a href="#" onclick="showCadastro()">Cadastre-se</a></span>
+    </div>
+    <div class="container" id="cadastro">
+        <label for="uname"><b>Nome Completo</b></label>
+        <input type="text" placeholder="Nome Completo" name="Nome Completo" required>
+        <label for="uname"><b>CPF</b></label>
+        <input type="text" placeholder="CPF" name="CPF" required>
+        <label for="uname"><b>Email</b></label>
+        <input type="text" placeholder="Email" name="email" required>
+        <label for="uname"><b>Usuário</b></label>
+        <input type="text" placeholder="Usuario" name="Usuario" required>
+        <label for="psw"><b>Senha</b></label>
+        <input type="password" placeholder="Senha" name="senha" required>
+        <button type="submit" class="btn">Cadastrar</button>
+        <span class="psw">Já tem uma conta? <a href="#" onclick="showLogin()">Login</a></span>
+    </div>
+    <script>
+        function showCadastro() {
+            document.getElementById('login').style.display = 'none';
+            document.getElementById('cadastro').style.display = 'block';
+        }
+        function showLogin() {
+            document.getElementById('login').style.display = 'block';
+            document.getElementById('cadastro').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

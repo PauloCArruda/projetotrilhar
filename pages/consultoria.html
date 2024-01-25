@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="image" type="image/x-icon" href="https://raw.githubusercontent.com/PauloCArruda/PauloCArruda.github.io/main/lozango-trilhar.ico" >
+        <title>Consultoria - trilhar</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        
+        list-style: none;
+        text-decoration: none;
+        }
+    
+    header {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        background-color: #08295e;
+        
+        padding: 0 2%;
+    }
+    
+    
+    
+    nav {
+        width: 60%;
+    }
+    
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+    
+    body {
+        background-color: white;
+    
+    }
+    li {
+        list-style: none;
+        color:white;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 1s;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: inline;
+    }
+    li:hover {
+        color: #ffd41f;
+        font-weight:bolder;
+        font-style:inherit;
+    }
+    
+    #logo {
+        width: 100px;
+        height: auto;
+        transition: 2s;
+        cursor: pointer;
+        
+    }
+    #logo:hover{
+        transform: scale(1.10);
+        color: red;
+    }
+    .content {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .description {
+        color:white;
+        font-size: 19px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 70%;
+    }
+    .button {
+        width: 120  px;
+        height: 40px;
+        background-color: #ffd41f;
+        color: #08295e;
+        padding: 12px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .8s;
+        font-size: 16px;
+        display: flex;
+        justify-content:center;
+        align-content:space-between;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        margin-top: 0px;
+    }
+    .button:hover {
+        background-color: red;
+        color: #08295e;
+        }
+        footer {
+        height: 300px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #08295e;
+        
+        }
+        span {
+        color: #08295e;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;   
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        }
+        span2 {
+        color: #08295e;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;   
+        height: 40px;
+        
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        }
+        span3 {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;   
+        height: 40px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        }
+        Modulo {
+        color: black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+        font-size: larger;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        }
+    
+        .footer-navigation {
+        display:inline;
+        }
+        .footer-list {
+        display: flex;
+        flex-direction: inherit;
+        align-items: center;
+        }
+    
+        @media(max-width: 768px) {
+        .footer-navigation {
+            display:block
+        }
+        nav {
+            display:contents;
+        }
+        }
+        #logo_dois {
+            width: 100px;
+            height: auto;
+            transition: 2s;
+            cursor: pointer;
+        }
+        #logo_dois:hover {
+            transform: scale(1.10);
+            color: red;
+            
+        }
+        </style>
+    </head>
+    <header>
+        <img id="logo" src="https://github.com/PauloCArruda/PauloCArruda.github.io/blob/main/logo%20trilhar%20Amarelo.png?raw=true"/>
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <a href="index.html">
+                    <li>Principal</li>
+                </a>
+                <a href="aulas.html">
+                    <li>Aulas</li>
+                </a>
+                <a href="consultoria.html">
+                    <li>Consultoria Individual</li>
+                </a>
+                <a href="duvidas.html">
+                    <li>Dúvidas Frequentes</li>
+                </a>
+            </ul>
+        </nav>
+       
+    
+        <button class="button" id="entrar">Entrar</button>
+        <script>
+            document.getElementById('entrar').addEventListener('click', function() {
+                window.location.href = 'cadastro.html'; // Substitua 'cadastro.html' pelo caminho para a sua página de cadastro
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </header>
+    <body>
+        <div id="titulo_um" style="text-align:center;"> 
+          <h1>Vamos ver como você está?</h1>  
+        </div>
+        <div id="corpoDoTexto1" style="display:flex; justify-content:space-around;">
+            <div>
+                <h2 id="receitas" style="color:blue;">Receitas:</h2><br>
+                <label for="salario">Salário/Renda Mensal:</label>
+                <input type="text" id="salario" oninput="calcular()" style="width:200px;"><br>
+                <label for="aluguel">Aluguel/Dividendo:</label>
+                <input type="text" id="aluguel" oninput="calcular()" style="width:200px;"><br>
+            </div>
+            <div>
+                <h2 id="despesas" style="color:red;">Despesas:</h2><br>
+                <label for="moradia">Moradia(agua, energia, condominio):</label>
+                <input type="text" id="moradia" oninput="calcular()" style="width:200px;"><br>
+                <label for="lazer">Lazer (Cinema, bar, clube, jogos):</label>
+                <input type="text" id="lazer" oninput="calcular()" style="width:200px;"><br>
+                <label for="transporte">Transporte (Financiamento carro/moto, combustível):</label>
+                <input type="text" id="transporte" oninput="calcular()" style="width:200px;"><br>
+                <label for="educacao">Educação (Cursos, faculdade, livros):</label>
+                <input type="text" id="educacao" oninput="calcular()" style="width:200px;"><br>
+                <label for="previdencia">Previdência privada/Investimento:</label>
+                <input type="text" id="previdencia" oninput="calcular()" style="width:200px;"><br>
+            </div>
+        </div>
+        <div id="banner"></div>
+        <canvas id="myChart" width="800" height="100"></canvas>
+    
+        <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Salário', 'Aluguel', 'Moradia', 'Lazer', 'Transporte', 'Educação', 'Previdência'],
+                    datasets: [{
+                        label: 'Receitas',
+                        data: [0, 0, 0, 0, 0, 0, 0],
+                        backgroundColor: [
+                            'rgba(75, 192, 192, 0.2)',  // Cor para Salário
+                            'rgba(75, 192, 192, 0.2)'   // Cor para Aluguel
+                        ],
+                        borderColor: [
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(75, 192, 192, 1)'
+                        ],
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Despesas',
+                        data: [0, 0, 0, 0, 0, 0, 0],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',  // Cor para Moradia
+                            'rgba(255, 99, 132, 0.2)',  // Cor para Lazer
+                            'rgba(255, 99, 132, 0.2)',  // Cor para Transporte
+                            'rgba(255, 99, 132, 0.2)',  // Cor para Educação
+                            'rgba(255, 99, 132, 0.2)'   // Cor para Previdência
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(255, 99, 132, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                // This more specific font property overrides the global property
+                                font: {
+                                    size: 20
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+    
+            function calcular() {
+                var salario = document.getElementById('salario').value;
+                var aluguel = document.getElementById('aluguel').value;
+                var moradia = document.getElementById('moradia').value;
+                var lazer = document.getElementById('lazer').value;
+                var transporte = document.getElementById('transporte').value;
+                var educacao = document.getElementById('educacao').value;
+                var previdencia = document.getElementById('previdencia').value;
+    
+                myChart.data.datasets[0].data = [salario, aluguel, 0, 0, 0, 0, 0];
+                myChart.data.datasets[1].data = [0, 0, -moradia, -lazer, -transporte, -educacao, -previdencia];
+                myChart.update();
+            }
+        </script>
+    
+    
+    <div id="educacao_financeira">
+        <h1 style="text-align:center; font-size:2em; color:black;">Educação Financeira</h1>
+        <p style="text-align:justify; margin-left:20px; margin-right:20px; font-size:1.5em; color:black;">
+            A educação financeira é uma habilidade essencial que todos os estudantes devem desenvolver. Como estudante, você pode não ter uma renda estável, mas é importante entender como gerenciar o dinheiro que você tem. Aqui estão algumas dicas:
+        </p>
+        <style>
+            #educacao_financeira li {
+                color: black;
+            }
+            #educacao_financeira li:hover {
+                color: yellow;
+            }
+        </style>
+        
+        <div id="educacao_financeira">
+            <h1 style="text-align:center; color:black;">Educação Financeira</h1>
+            <p style="text-align:justify; margin-left:20px; margin-right:20px; color:black;">
+                A educação financeira é uma habilidade essencial que todos os estudantes devem desenvolver. Como estudante, você pode não ter uma renda estável, mas é importante entender como gerenciar o dinheiro que você tem. Aqui estão algumas dicas:
+            </p>
+            <p style="text-align:justify; margin-left:20px; margin-right:20px; color:black;"><strong>Moradia:</strong> Idealmente, não mais que 30% da sua renda deve ser destinada para custos de moradia. Isso inclui aluguel ou hipoteca, bem como contas de serviços públicos como água e energia.</p>
+            <p style="text-align:justify; margin-left:20px; margin-right:20px; color:black;"><strong>Lazer:</strong> Recomenda-se que cerca de 5% da sua renda seja destinada ao lazer. Isso inclui atividades como ir ao cinema, sair para jantar, viagens e hobbies.</p>
+            <p style="text-align:justify; margin-left:20px; margin-right:20px; color:black;"><strong>Transporte:</strong> O transporte geralmente consome cerca de 15% da renda. Isso inclui o custo de possuir e manter um veículo, como pagamento de carro, seguro, combustível e manutenção, ou alternativamente, o custo do transporte público.</p>
+            <p style="text-align:justify; margin-left:20px; margin-right:20px; color:black;"><strong>Educação:</strong> A educação é um investimento em si mesmo. Recomenda-se que cerca de 5% da sua renda seja destinada à educação, seja para pagar a mensalidade escolar, comprar livros ou investir em cursos de desenvolvimento profissional.</p>
+            <p style="text-align:justify; margin-left:20px; margin-right:20px; color:black;"><strong>Investimento/Previdência:</strong> É importante poupar para o futuro. Recomenda-se que pelo menos 20% da sua renda seja destinada à poupança e investimentos. Isso pode incluir contribuições para um fundo de aposentadoria ou investimentos em ações e títulos.</p>
+        </div>
+    
+        
+</body>
+    <footer>
+        <img id="logo_dois"src="https://github.com/PauloCArruda/PauloCArruda.github.io/blob/main/lozango%20trilhar.png?raw=true">
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <a href="index.html">
+                    <li>Principal</li>
+                </a>
+                <a href="aulas.html">
+                    <li>Aulas</li>
+                </a>
+                <a href="consultoria.html">
+                    <li>Consultoria Individual</li>
+                </a>
+                <a href="duvidas.html">
+                    <li>Dúvidas Frequentes</li>
+                </a>
+            </ul>
+        </nav>
+        <span>Todos os Direitos Reservados © </span>
+        <span>Desenvolvido por Leandro, Lucas e Paulo</span>
+    </footer>
+    </html>

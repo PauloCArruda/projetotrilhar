@@ -1,0 +1,193 @@
+
+h1 {
+  color: #ddd;
+  text-align: center;
+}
+h2 {
+  color: #ddd;
+  text-align: left;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  table {
+	  width: 100%;
+	  border-collapse: collapse;
+	  margin-top: 40px;
+	  padding: 5px;
+    margin-bottom: 10px;
+	  border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -ms-border-radius: 5px;
+	  -o-border-radius: 5px;
+}
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #ffd41f;
+    color: #000;
+    padding: 5px 10px;
+    margin-top: 10px;
+  }
+  
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #08295e;
+  color: #ddd;
+  list-style: none;
+  text-decoration: none;
+  }
+.page {
+      display: grid;
+      grid-template-areas:
+        'menu menu menu menu'
+        'banner banner banner banner'
+        'produto1 produto2 produto3 produto3'
+        'footer footer footer footer';
+      /*grid-gap: 10px;*/
+      /*padding: 10px;*/
+  }
+  
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+}
+
+nav {
+  width: 60%;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 1s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li:hover {
+  color: #ffd41f;
+  font-weight:bolder;
+  font-style:inherit;
+}
+
+#logo {
+  width: 100px;
+  height: auto;
+  transition: 2s;
+  cursor: pointer;
+  
+}
+#logo:hover{
+  transform: scale(1.10);
+  color: red;
+  -webkit-transform: scale(1.10);
+  -moz-transform: scale(1.10);
+  -ms-transform: scale(1.10);
+  -o-transform: scale(1.10);
+}
+#banner {
+  background-image: url(https://github.com/PauloCArruda/PauloCArruda.github.io/blob/main/banner%20trilhar%201.png?raw=true);
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.content {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.description {
+  color: #fff;
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 70%;
+}
+.button {
+  width: 120  px;
+  height: 40px;
+  background-color: #ffd41f;
+  color: #08295e;
+  padding: 12px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .8s;
+  font-size: 16px;
+  display: flex;
+  justify-content:center;
+  align-content:space-between;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-top: 0px;
+}
+.button:hover {
+  background-color: red;
+  color: #08295e;
+}
+footer {
+  height: 300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+span {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+
+.footer-navigation {
+  display:none;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media(max-width: 768px) {
+  .footer-navigation {
+      display:block
+  }
+  nav {
+      display:contents;
+  }
+  
+}

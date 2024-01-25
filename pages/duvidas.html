@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="image" type="image/x-icon" href="https://raw.githubusercontent.com/PauloCArruda/PauloCArruda.github.io/main/lozango-trilhar.ico" >
+    
+    <link href="./duvidas.css" rel="stylesheet">
+    
+    
+    <title>trilhar - Educação Financeira</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://github.com/PauloCArruda/PauloCArruda.github.io/blob/main/logo%20trilhar%20Amarelo.png?raw=true"/>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Principal</li>
+                </a>
+                <a href="aulas.html">
+                    <li>Aulas</li>
+                </a>
+               
+                <a href="duvidas.html">
+                    <li>Dúvidas Frequentes</li>
+                </a>
+            </ul>
+        </nav>
+        <button class="button" id="entrar">Entrar</button>
+    </header>
+    <script>
+        document.getElementById('entrar').addEventListener('click', function() {
+            window.location.href = 'login.html'; 
+        });
+    </script>
+
+
+
+<h1>Dúvidas básicas sobre investimentos</h1>
+
+<div class="modulo">
+    <h2 class="modulo-toggle">Não sei nada sobre investimentos <span class="arrow">+</span></h2>
+    <div class="modulo-content">
+        <p id="resposta1">Grande parte dos nossos alunos decide fazer a TRILHAR sem saber nada sobre investimentos, mas isso não é um problema.
+        Todos os nossos módulos são desenvolvidos de forma didática para que QUALQUER pessoa consiga investir, independente da idade ou do conhecimento prévio sobre investimentos.
+        Nós ensinamos, inclusive, a utilizar ferramentas e plataformas que serão úteis no processo de investimento.</p>
+    </div>
+</div>
+
+
+
+<div class="modulo">
+    <h2 class="modulo-toggle">O que a TRILHAR realmente ensina? <span class="arrow">+</span></h2>
+    <div class="modulo-content">
+        <p id="resposta2">Com nossos 8 módulos vão desde o mais básico no mundo dos investimentos – Economizar e Organizar suas Finanças – até assuntos mais complexos e técnicos,
+        como Marcação a Mercado, Análise de Ações e Fundos Imobiliários no Brasil e no mundo.
+        Nosso compromisso é o de, em 8 semanas, levar alguém que nunca ouviu falar de investimentos na vida ao nível de um investidor internacional, capaz de escolher as melhores oportunidades disponíveis nos mercados nacional e internacional..</p>
+    </div>
+</div>
+
+<div class="modulo">
+    <h2 class="modulo-toggle">Já invisto há anos. A TRILHAR é para mim? <span class="arrow">+</span></h2>
+    <div class="modulo-content">
+        <p id="resposta3">As nossas aulas foram criadas utilizando princípios dos maiores investidores da história: Philip Fisher, Benjamin Graham, Warren Buffet, 
+        Ray Dalio, Nassim Taleb e muitos outros. Desta forma, se você ainda tem dúvidas de como analisar uma ação ou rebalancear sua carteira de investimentos, 
+        é impossível que você não aprenda algo novo e transformador.</br>
+        E estamos falando apenas do Módulo 4. No Módulo 3, por exemplo, explicamos sobre Renda Fixa,
+         detalhando racionalmente porque faz muito sentido para um investidor dividir os seus investimentos entre a renda fixa e variável.
+          Ensinamos estratégias para lucrar com a Marcação a Mercado e selecionar CDBs, LCIs, LCAs, Debêntures, CRIs e CRAs com muito mais eficiência.
+        No Módulo 5, entramos a fundo em estratégias para proteger grandes fortunas, utilizando Ouro, Prata e até Criptomoedas.</br>
+        No Módulo 6, falamos sobre investimentos internacionais e ensinamos o passo a passo para investir nos EUA em Renda Fixa e Variável por meio de diversas estratégias.</br>
+        Em resumo, a TRILHAR é para qualquer um que queira se aprofundar no mundo dos investimentos, independente da experiência.
+         E, por fim, a nossa análise de perfil só permite que um aluno seja aprovado caso ele tenha realmente o que aprender.</p>
+    </div>
+</div>
+
+<div class="modulo">
+    <h2 class="modulo-toggle">Vou aprender Day Trade? <span class="arrow">+</span></h2>
+    <div class="modulo-content">
+        <p id="resposta4">Nenhum tipo de análise gráfica ou estratégia de curto prazo é tolerada nos ambientes da TRILHAR.
+         Se você está procurando alguma forma de enriquecer da noite para o dia ou ganhar dinheiro fácil, esse não é o seu lugar.</b>
+            Segundo estudos da FGV (Fundação Getúlio Vargas), referência em economia no Brasil, mais de 90% das pessoas que tentam viver de Day Trade tomam prejuízo.
+             Nós não falamos sobre “aventuras” e “sonhos impossíveis” nos ambientes da UVP; ensinamos apenas estratégias de longo prazo, testadas pelo tempo, com a finalidade de construir patrimônio.</p>
+    </div>
+</div>
+
+<div class="modulo">
+    <h2 class="modulo-toggle">O que é a TRILHAR? <span class="arrow">+</span></h2>
+    <div class="modulo-content">
+        <p id="resposta5">TRILHAR é uma escola de investimentos que consegue conduzir qualquer pessoa que não conheça sobre o assunto, ou seja, do ponto zero até que se torne um investidor no Brasil e no mundo.
+            Por meio deste conhecimento, é possível alcançar a sua liberdade financeira e atingir os seus sonhos e objetivos a longo prazo.
+            Vai por mim, esta não é uma promessa de dinheiro fácil.</p>
+    </div>
+</div>
+
+  <script>
+document.querySelectorAll('.modulo-toggle, .modulo-toggle .arrow').forEach(function(toggle) {
+    toggle.addEventListener('click', function() {
+        var content = this.closest('.modulo').querySelector('.modulo-content');
+        content.classList.toggle('active');
+        this.querySelector('.arrow').textContent = content.classList.contains('active') ? '-' : '+';
+    });
+});
+
+</script>
+
+
+
+</div>
+
+</body>
+  
+<footer>
+    <div class="footer-container">
+        <div class="logo-container">
+            <img id="logofooter" src="logo_trilhar_amarelo.png" alt="Logo Trilhar Amarelo">
+        </div>
+        <div class="footer-content">
+            <span>Todos os Direitos Reservados © 2023</span>
+            <span>Desenvolvido por Leandro, Lucas e Paulo</span>
+        </div>
+        
+    </div>
+</footer>
+</html>
